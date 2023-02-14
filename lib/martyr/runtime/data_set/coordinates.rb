@@ -46,8 +46,8 @@ module Martyr
         dup.set!(*args)
       end
 
-      def locate(*args)
-        dup.locate!(*args)
+      def locate(*args, **kwargs)
+        dup.locate!(*args, **kwargs)
       end
 
       def locate!(slice_hash={}, reset: [])
